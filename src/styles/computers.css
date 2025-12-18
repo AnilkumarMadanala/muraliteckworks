@@ -1,0 +1,51 @@
+.computers-hero {
+  background: linear-gradient(135deg, #124E66, #212A31);
+  color: white;
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.computers-services {
+  padding: 60px 30px;
+  background-color: #f4f6f8;
+}
+
+.computers-services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.computers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.computers-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.computers-icon {
+  font-size: 40px;
+  color: #124E66;
+  margin-bottom: 12px;
+}
+
+.computers-call {
+  background: #212A31;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.computers-call-btn {
+  background: #4db8ff;
+  padding: 12px 26px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}

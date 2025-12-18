@@ -1,0 +1,51 @@
+.mobiles-hero {
+  background: linear-gradient(135deg, #212A31, #124E66);
+  color: white;
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.mobiles-services {
+  padding: 60px 30px;
+  background-color: #f4f6f8;
+}
+
+.mobiles-services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mobiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.mobiles-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.mobiles-icon {
+  font-size: 40px;
+  color: #124E66;
+  margin-bottom: 12px;
+}
+
+.mobiles-call {
+  background: #212A31;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.mobiles-call-btn {
+  background: #4db8ff;
+  padding: 12px 26px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}

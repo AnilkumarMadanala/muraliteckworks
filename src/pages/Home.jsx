@@ -62,38 +62,39 @@ Requirement: ${description}`;
   return (
     <>
       {/* HERO */}
-      <section
-        className="hero-slider"
-        style={{ backgroundImage: `url(${slides[current]})` }}
-      >
-        <div className="overlay">
-          <div className="hero-content">
-            <span className="hero-badge">Trusted CCTV Experts</span>
-            <h1>Secure Your Home & Business</h1>
-            <h2>CCTV Installation Services</h2>
+    {/* HERO SECTION */}
+<section
+  className="hero-slider"
+ style={{ backgroundImage: `url(${slide1})` }}
+ >
+  <div className="overlay">
+    <div className="hero-content">
+      <span className="hero-badge">Trusted CCTV Experts</span>
 
-            <p className="hero-highlight">
-              Parvathipuram • Vizag • Vizianagaram • Srikakulam
-            </p>
+      <h1>Secure Your Home & Business</h1>
+      <h2>Professional CCTV Installation</h2>
 
-            <p className="hero-sub">
-              HD, IP & WiFi Cameras | Free Site Visit | Same-Day Installation
-            </p>
+      <p className="hero-highlight">
+        Parvathipuram • Vizag • Vizianagaram • Srikakulam
+      </p>
 
-            <div className="stats">
-              <span>✅ 1200+ Installations</span>
-              <span>📍 Since 2020</span>
-            </div>
+      <p className="hero-sub">
+        HD • IP • WiFi Cameras | Free Site Visit | Same-Day Installation
+      </p>
 
-            <p className="brands">Hikvision · CP Plus · Dahua</p>
+      <div className="stats">
+        <span>✅ 6+ Years Experience</span>
+        <span>👨‍👩‍👧‍👦 1000+ Happy Clients</span>
+      </div>
 
-            <div className="hero-buttons">
-              <button onClick={() => setShowForm(true)}>Get Quote Now</button>
-              <a href="tel:9676760263">Call Now: 9676760263</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="hero-buttons">
+        <button onClick={() => setShowForm(true)}>Free Site Visit</button>
+        <a href="tel:9676760263">Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* WHY CHOOSE US */}
       {/* WHY CHOOSE US */}

@@ -1,9 +1,58 @@
-.mobiles-hero {
-  background: linear-gradient(135deg, #212A31, #124E66);
-  color: white;
-  text-align: center;
-  padding: 70px 30px;
+/* ================= HERO SLIDER ================= */
+.mobiles-hero.slider {
+  height: 70vh; 
+  margin-top: 40px;                 /* Desktop height */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 1s ease-in-out;
 }
+
+/* Overlay text */
+.hero-overlay {
+  
+  color: black;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 720px;
+}
+
+.hero-overlay h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+.hero-overlay p {
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .mobiles-hero.slider {
+    height: 45vh;              /* 🔽 Smaller for mobile */
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    padding: 18px 16px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 24px;
+  }
+
+  .hero-overlay p {
+    font-size: 13px;
+  }
+}
+
 
 .mobiles-services {
   padding: 60px 30px;
@@ -48,4 +97,125 @@
   color: black;
   text-decoration: none;
   font-weight: bold;
+}
+/* ================= MOBILE CHARGES ================= */
+.mobile-charges {
+  padding: 60px 30px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.mobile-charges h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #212A31;
+}
+
+.charges-subtitle {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.charges-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card */
+.charge-card {
+  background: #f4f6f8;
+  padding: 25px 20px;
+  border-radius: 14px;
+  text-align: left;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.charge-card:hover {
+  transform: translateY(-6px);
+}
+
+.charge-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #124E66;
+}
+
+.charge-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.charge-card li {
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+/* Note */
+.charges-note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #0a6a4f;
+  font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .charges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .charges-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .charge-card {
+    text-align: center;
+  }
+}
+/* ================= FLOATING WHATSAPP ================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  width: 58px;
+  height: 58px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 34px;
+  height: 34px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile size adjustment */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    width: 52px;
+    height: 52px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+  }
 }

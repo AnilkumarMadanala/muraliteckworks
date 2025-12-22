@@ -3,13 +3,18 @@
 ================================ */
 
 .hero-slider {
-  width: 100%;
-  min-height: calc(100vh - 70px); /* navbar height */
+  width: 100vw; /* 🔥 Use viewport width */
+  min-height: calc(100vh - 70px);
   margin: 0;
   padding: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative; /* 🔥 For absolute positioning of overlay */
+  left: 50%; /* 🔥 Break out of container */
+  right: 50%;
+  margin-left: -50vw; /* 🔥 Center it */
+  margin-right: -50vw;
 }
 
 

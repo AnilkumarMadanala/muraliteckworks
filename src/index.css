@@ -20,15 +20,16 @@
 body {
   min-width: 320px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin: 0; /* 🔥 CRITICAL */
+  padding: 0; /* 🔥 CRITICAL */
   background-color: #2e3944;
 }
 
+/* ✅ FIX: Remove all padding from root */
 #root {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0; /* 🔥 REMOVED padding: 2rem */
   display: flex;
   flex-direction: column;
   min-height: 100vh;

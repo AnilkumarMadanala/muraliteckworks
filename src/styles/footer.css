@@ -61,7 +61,7 @@
 /* BUTTONS */
 .footer-btn {
   display: block;
-  width: 35%;
+  width: 45%;
   text-align: center;
   padding: 12px;
   border-radius: 6px;
@@ -181,7 +181,7 @@
 
   /* BUTTONS FULL WIDTH */
   .footer-btn {
-    width: 100%;
+    width: 40%;
     max-width: 280px;
     justify-content: center;
     margin: 8px auto;

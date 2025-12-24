@@ -1,7 +1,7 @@
 /* ================= HERO SLIDER ================= */
 .mobiles-hero.slider {
   height: 70vh; 
-  margin-top: 40px;                 /* Desktop height */
+  margin-top: 160px;                 /* Desktop height */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -91,12 +91,16 @@
 }
 
 .mobiles-call-btn {
-  background: #4db8ff;
-  padding: 12px 26px;
-  border-radius: 8px;
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
+     display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    background: #4db8ff;
+    color: black;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
 }
 /* ================= MOBILE CHARGES ================= */
 .mobile-charges {

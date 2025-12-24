@@ -89,7 +89,7 @@ Requirement: ${description}`;
 
       <div className="hero-buttons">
         <button onClick={() => setShowForm(true)}>Free Site Visit</button>
-        <a href="tel:9676760263">Call Now</a>
+        
       </div>
     </div>
   </div>

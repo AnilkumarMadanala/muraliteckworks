@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import CCTV from "./pages/CCTV";
 import Computers from "./pages/Computers";
@@ -12,6 +13,7 @@ function App() {
   return (
     <>
       <Navbar />
+       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/cctv" element={<CCTV />} />

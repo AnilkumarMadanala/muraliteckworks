@@ -53,7 +53,7 @@ Email: ${email}%0A
 Location: ${location}%0A
 Requirement: ${description}`;
 
-    window.open(`https://wa.me/919676760263?text=${message}`, "_blank");
+    window.open(`https://wa.me/919182411422?text=${message}`, "_blank");
 
     e.target.reset();
     setShowForm(false);
@@ -253,7 +253,7 @@ Requirement: ${description}`;
         <div className="contact-container">
           <div className="contact-info">
             <p>
-              <FaPhoneAlt /> <strong>Call:</strong> 9676760263
+              <FaPhoneAlt /> <strong>Call:</strong> 9182411422
             </p>
             <p>
               <FaEnvelope /> <strong>Email:</strong>{" "}
@@ -266,7 +266,7 @@ Requirement: ${description}`;
             </p>
 
             <div className="contact-buttons">
-              <a href="tel:9676760263" className="btn-call">
+              <a href="tel:9182411422" className="btn-call">
                 Call Now
               </a>
               <button className="btn-visit" onClick={() => setShowForm(true)}>
@@ -278,7 +278,7 @@ Requirement: ${description}`;
           <div className="contact-map">
             <iframe
               title="map"
-              src="https://www.google.com/maps?q=Parvathipuram&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.4971253426274!2d83.60473507543217!3d18.686548882439542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c7fe8fc2ba481%3A0x5102f1af631c7d5f!2sMurali%20Technical%20Works!5e0!3m2!1sen!2sin!4v1766848889518!5m2!1sen!2sin"
               loading="lazy"
             ></iframe>
           </div>
@@ -322,7 +322,7 @@ Requirement: ${description}`;
 
   {/* FLOATING WHATSAPP ICON */}
 {/* <a
-  href="https://wa.me/919676760263"
+  href="https://wa.me/919182411422"
   target="_blank"
   rel="noopener noreferrer"
   className="whatsapp-float"

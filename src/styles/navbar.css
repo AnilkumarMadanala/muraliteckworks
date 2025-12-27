@@ -37,20 +37,21 @@ body,
 }
 
 /* ================= BRAND ================= */
-.brand {
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: bold;
-  white-space: nowrap;
+
+.brand-logo {
+  height: 48px;       /* adjust as needed */
+  width: 300px;
+  margin-top: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 40px;
+    margin-top: 1px;
+  }
 }
 
-.brand-main {
-  color: #4db8ff;
-}
-
-.brand-sub {
-  color: #ffffff;
-}
 
 /* ================= LINKS ================= */
 .navbar-links {

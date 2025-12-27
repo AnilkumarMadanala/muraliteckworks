@@ -24,7 +24,7 @@ Email: ${formData.get("email")}%0A
 Location: ${formData.get("location")}%0A
 Requirement: ${formData.get("description")}`;
 
-    window.open(`https://wa.me/919676760263?text=${message}`, "_blank");
+    window.open(`https://wa.me/919182411422?text=${message}`, "_blank");
     e.target.reset();
     setShowForm(false);
   };
@@ -33,13 +33,16 @@ Requirement: ${formData.get("description")}`;
     <>
      <header className="navbar">
   {/* TOP ROW */}
-  <div className="navbar-top">
-    <div className="navbar-logo">
-      <Link to="/" className="brand">
-        <span className="brand-main">Murali</span>
-        <span className="brand-sub">TechnicalWorks</span>
-      </Link>
-    </div>
+ <div className="navbar-top">
+  <div className="navbar-logo">
+    <Link to="/" className="brand">
+      <img
+        src="/logo2.jpg"
+        alt="Murali Technical Works Logo"
+        className="brand-logo"
+      />
+    </Link>
+  </div>
 
     {/* DESKTOP ACTIONS */}
     <div className="navbar-actions desktop-actions">
@@ -47,13 +50,13 @@ Requirement: ${formData.get("description")}`;
         Free Site Visit
       </button>
 
-      <a href="tel:9676760263" className="call-btn">
+      <a href="tel:9182411422" className="call-btn">
         <FaPhoneAlt /> Call Now
       </a>
     </div>
 
     {/* MOBILE CALL ICON */}
-    <a href="tel:9676760263" className="call-btn mobile-call">
+    <a href="tel:9182411422" className="call-btn mobile-call">
       <FaPhoneAlt />
     </a>
   </div>

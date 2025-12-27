@@ -26,9 +26,10 @@ I would like a FREE site visit for CCTV / Computer / Mobile service.`;
         <div className="footer-box">
           <h3>Muralitechnicalworks</h3>
           <p>
-            Trusted experts in CCTV installation, computer services, mobile
-            solutions, and printer cartridge supply. Serving homes and
-            businesses with reliable technology solutions.
+             Murali Technical Works  
+             CCTV Installation, Mobile, Computer & Printer Repair  
+            Veeraghattam, Parvathipuram Manyam, Andhra Pradesh – 532460  
+
           </p>
 
           <div className="footer-social">
@@ -36,7 +37,7 @@ I would like a FREE site visit for CCTV / Computer / Mobile service.`;
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaYoutube /></a>
             <a
-              href={`https://wa.me/919676760263?text=${whatsappMessage}`}
+              href={`https://wa.me/919182411422?text=${whatsappMessage}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -78,19 +79,19 @@ I would like a FREE site visit for CCTV / Computer / Mobile service.`;
           </p>
 
           <p>
-            <FaPhoneAlt /> <a href="tel:9676760263">9676760263</a>
+            <FaPhoneAlt /> <a href="tel:9182411422">9182411422</a>
           </p>
 
           <p>
             <FaEnvelope /> muralitechnicalworks@gmail.com
           </p>
 
-          <a href="tel:9676760263" className="footer-btn call">
+          <a href="tel:9182411422" className="footer-btn call">
             📞 Call Now
           </a>
 
           <a
-            href={`https://wa.me/919676760263?text=${whatsappMessage}`}
+            href={`https://wa.me/919182411422?text=${whatsappMessage}`}
             target="_blank"
             rel="noreferrer"
             className="footer-btn whatsapp"

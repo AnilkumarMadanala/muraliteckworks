@@ -99,7 +99,7 @@ Location: ${formData.get("location")}%0A
 Requirement: ${formData.get("description")}`;
 
     window.open(
-      `https://wa.me/919676760263?text=${encodeURIComponent(message)}`,
+      `https://wa.me/919182411422?text=${encodeURIComponent(message)}`,
       "_blank"
     );
 
@@ -183,7 +183,7 @@ Requirement: ${formData.get("description")}`;
             Free Site Visit
           </button>
 
-          <a href="tel:9676760263" className="cctv-call-btn">
+          <a href="tel:9182411422" className="cctv-call-btn">
             <FaPhoneAlt /> Call Now
           </a>
         </div>

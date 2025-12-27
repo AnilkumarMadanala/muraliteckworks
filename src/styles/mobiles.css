@@ -32,6 +32,26 @@
   font-size: 17px;
   line-height: 1.4;
 }
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background: #fff;
+  transform: scale(1.3);
+}
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
@@ -50,6 +70,14 @@
 
   .hero-overlay p {
     font-size: 13px;
+  }
+   .slider-dots {
+    bottom: 14px;
+  }
+
+  .slider-dots .dot {
+    width: 8px;
+    height: 8px;
   }
 }
 

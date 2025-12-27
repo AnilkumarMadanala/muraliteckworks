@@ -40,7 +40,7 @@ export default function PrinterCartridges() {
         </a>
       </section>
       <a
-  href="https://wa.me/919676760263?text=Hi%20Murali%20Technicalworks!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+  href="https://wa.me/919182411422?text=Hi%20Murali%20Technicalworks!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
   target="_blank"
   rel="noopener noreferrer"
   className="whatsapp-float"

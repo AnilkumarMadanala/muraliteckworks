@@ -64,14 +64,25 @@ export default function Mobiles() {
     <div className="mobiles-page">
       {/* HERO SLIDER */}
       <section
-        className="mobiles-hero slider"
-        style={{ backgroundImage: `url(${slides[current].img})` }}
-      >
-        <div className="hero-overlay">
-          <h1>{slides[current].title}</h1>
-          <p>{slides[current].desc}</p>
-        </div>
-      </section>
+  className="mobiles-hero slider"
+  style={{ backgroundImage: `url(${slides[current].img})` }}
+>
+  <div className="hero-overlay">
+    <h1>{slides[current].title}</h1>
+    <p>{slides[current].desc}</p>
+  </div>
+
+  {/* SLIDER DOTS */}
+  <div className="slider-dots">
+    {slides.map((_, index) => (
+      <span
+        key={index}
+        className={`dot ${current === index ? "active" : ""}`}
+        onClick={() => setCurrent(index)}
+      ></span>
+    ))}
+  </div>
+</section>
 
       {/* SERVICES */}
       {/* <section className="mobiles-services">
@@ -162,7 +173,7 @@ export default function Mobiles() {
       </section>
       {/* FLOATING WHATSAPP */}
 <a
-  href="https://wa.me/919676760263?text=Hi%20Murali%20Technicalworks!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+  href="https://wa.me/919182411422?text=Hi%20Murali%20Technicalworks!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
   target="_blank"
   rel="noopener noreferrer"
   className="whatsapp-float"

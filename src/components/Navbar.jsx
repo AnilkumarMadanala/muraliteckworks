@@ -32,27 +32,19 @@ Requirement: ${formData.get("description")}`;
   return (
     <>
       <header className="navbar">
+        {/* TOP ROW */}
         <div className="navbar-top">
-
-          {/* LOGO */}
-          <Link to="/" className="brand">
-            <div className="logo-wrapper">
-              <img
-                src="/logo6m.jpeg"
-                alt="Murali Technical Works Logo"
-                className="brand-logo"
-              />
-            </div>
-          </Link>
-
-          {/* LINKS */}
-          <nav className="navbar-links">
-            <Link to="/"><FaHome /> Home</Link>
-            <Link to="/cctv"><FaVideo /> CCTV</Link>
-            <Link to="/computers"><FaDesktop /> Computers</Link>
-            <Link to="/mobiles"><FaMobileAlt /> Mobiles</Link>
-            <Link to="/printer-cartridges"><FaPrint /> Cartridges</Link>
-          </nav>
+          <div className="navbar-logo">
+            <Link to="/" className="brand">
+              <div className="logo-wrapper">
+                <img
+                  src="/logo6m.jpeg"
+                  alt="Murali Technical Works Logo"
+                  className="brand-logo"
+                />
+              </div>
+            </Link>
+          </div>
 
           {/* DESKTOP ACTIONS */}
           <div className="navbar-actions desktop-actions">
@@ -65,12 +57,20 @@ Requirement: ${formData.get("description")}`;
             </a>
           </div>
 
-          {/* MOBILE CALL */}
+          {/* MOBILE CALL ICON */}
           <a href="tel:9182411422" className="call-btn mobile-call">
             <FaPhoneAlt />
           </a>
-
         </div>
+
+        {/* LINKS ROW */}
+        <nav className="navbar-links">
+          <Link to="/"><FaHome /> Home</Link>
+          <Link to="/cctv"><FaVideo /> CCTV</Link>
+          <Link to="/computers"><FaDesktop /> Computers</Link>
+          <Link to="/mobiles"><FaMobileAlt /> Mobiles</Link>
+          <Link to="/printer-cartridges"><FaPrint /> Cartridges</Link>
+        </nav>
       </header>
 
       {/* FORM */}

@@ -31,46 +31,47 @@ Requirement: ${formData.get("description")}`;
 
   return (
     <>
-     <header className="navbar">
-  {/* TOP ROW */}
- <div className="navbar-top">
-  <div className="navbar-logo">
-    <Link to="/" className="brand">
-      <img
-        src="/logo2.jpg"
-        alt="Murali Technical Works Logo"
-        className="brand-logo"
-      />
-    </Link>
-  </div>
+      <header className="navbar">
+        <div className="navbar-top">
 
-    {/* DESKTOP ACTIONS */}
-    <div className="navbar-actions desktop-actions">
-      <button className="visit-btn" onClick={() => setShowForm(true)}>
-        Free Site Visit
-      </button>
+          {/* LOGO */}
+          <Link to="/" className="brand">
+            <div className="logo-wrapper">
+              <img
+                src="/logo6m.jpeg"
+                alt="Murali Technical Works Logo"
+                className="brand-logo"
+              />
+            </div>
+          </Link>
 
-      <a href="tel:9182411422" className="call-btn">
-        <FaPhoneAlt /> Call Now
-      </a>
-    </div>
+          {/* LINKS */}
+          <nav className="navbar-links">
+            <Link to="/"><FaHome /> Home</Link>
+            <Link to="/cctv"><FaVideo /> CCTV</Link>
+            <Link to="/computers"><FaDesktop /> Computers</Link>
+            <Link to="/mobiles"><FaMobileAlt /> Mobiles</Link>
+            <Link to="/printer-cartridges"><FaPrint /> Cartridges</Link>
+          </nav>
 
-    {/* MOBILE CALL ICON */}
-    <a href="tel:9182411422" className="call-btn mobile-call">
-      <FaPhoneAlt />
-    </a>
-  </div>
+          {/* DESKTOP ACTIONS */}
+          <div className="navbar-actions desktop-actions">
+            <button className="visit-btn" onClick={() => setShowForm(true)}>
+              Free Site Visit
+            </button>
 
-  {/* LINKS ROW */}
-  <nav className="navbar-links">
-    <Link to="/"><FaHome /> Home</Link>
-    <Link to="/cctv"><FaVideo /> CCTV</Link>
-    <Link to="/computers"><FaDesktop /> Computers</Link>
-    <Link to="/mobiles"><FaMobileAlt /> Mobiles</Link>
-    <Link to="/printer-cartridges"><FaPrint /> Cartridges</Link>
-  </nav>
-</header>
+            <a href="tel:9182411422" className="call-btn">
+              <FaPhoneAlt /> Call Now
+            </a>
+          </div>
 
+          {/* MOBILE CALL */}
+          <a href="tel:9182411422" className="call-btn mobile-call">
+            <FaPhoneAlt />
+          </a>
+
+        </div>
+      </header>
 
       {/* FORM */}
       {showForm && (

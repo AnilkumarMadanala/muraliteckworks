@@ -10,7 +10,6 @@ body,
 #root {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
   background-color: #212a31;
   font-family: "Poppins", system-ui, sans-serif;
 }
@@ -21,46 +20,44 @@ body,
   top: 0;
   left: 0;
   width: 100%;
-
   background: #1c2023;
   z-index: 1000;
-
-  padding: 12px 20px; /* desktop default */
 }
-
 
 /* ================= TOP ROW ================= */
 .navbar-top {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;           /* 🔥 vertical center */
+  gap: 20px;
+  padding: 12px 20px;
+}
+
+/* ================= LOGO ================= */
+.logo-wrapper {
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
-
-/* ================= BRAND ================= */
 
 .brand-logo {
-  height: 48px;       /* adjust as needed */
-  width: 300px;
-  margin-top: 30px;
+  height: 85px;          /* increase/decrease safely */
+  width: auto;
+  max-width: 280px;
   object-fit: contain;
-  cursor: pointer;
 }
-@media (max-width: 768px) {
-  .brand-logo {
-    height: 40px;
-    margin-top: 1px;
-  }
-}
-
 
 /* ================= LINKS ================= */
 .navbar-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 26px;
-  margin-top: 10px; /* safe spacing */
+  margin-top: 100px;
 }
-
 
 .navbar-links a {
   color: #d3d9d4;
@@ -78,6 +75,7 @@ body,
 /* ================= ACTIONS ================= */
 .navbar-actions {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
@@ -102,7 +100,7 @@ body,
   gap: 6px;
 }
 
-/* ================= MOBILE ONLY ================= */
+/* ================= MOBILE ================= */
 .mobile-call {
   display: none;
 }
@@ -110,36 +108,38 @@ body,
 /* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
 
-  .navbar {
-    padding: 12px;
-  }
-
   .navbar-top {
-    width: 100%;
-  }
-
-  /* hide desktop buttons */
-  .desktop-actions {
-    display: none;
-  }
-
-  /* show mobile call icon */
-  .mobile-call {
     display: flex;
-    padding: 8px 10px;
+    justify-content: space-between;
   }
 
-  /* nav icons row */
- .navbar-links {
-    margin-top: 12px;   /* instead of negative margin */
-    padding-top: 10px;
+  .navbar-links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1c2023;
+    padding: 10px 0;
     border-top: 1px solid rgba(255,255,255,0.15);
     justify-content: space-around;
   }
 
-   .navbar-links a {
+  .navbar-links a {
     font-size: 12px;
     flex-direction: column;
     text-align: center;
+  }
+
+  .desktop-actions {
+    display: none;
+  }
+
+  .mobile-call {
+    display: flex;
+  }
+
+  .brand-logo {
+    height: 55px;
+    max-width: 160px;
   }
 }
